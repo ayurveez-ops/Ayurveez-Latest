@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --theme-bg-main: #f9f7f2;
+  --theme-bg-card: #ffffff;
+  --theme-bg-subtle: #f3efe6;
+  --theme-border: #e6dfd3;
+  --theme-primary: #1b4332;
+  --theme-primary-hover: #143628;
+  --theme-primary-light: #eaf2eb;
+  --theme-accent: #c25e2e;
+  --theme-accent-light: #faede6;
+  --theme-text-main: #28231d;
+  --theme-text-muted: #6e6659;
+}
+
+body {
+  background-color: #f9f7f2;
+  color: #28231d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar in warm Ayurvedic natural tones */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3efe6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4caa7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8ac87;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 34s linear infinite;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+

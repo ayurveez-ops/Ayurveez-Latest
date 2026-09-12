@@ -1,0 +1,6 @@
+{
+  "name": "Ayurveez - BAMS, AIAPGET & AYUSH Medical Officer",
+  "description": "Comprehensive online study and test preparation platform for BAMS, AIAPGET, and AYUSH Medical Officer exams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

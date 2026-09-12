@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "fields": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "age": { "type": "string" },
+        "gender": { "type": "string" },
+        "mobileNumber": { "type": "string" },
+        "whatsappNumber": { "type": "string" },
+        "isWhatsappSameAsMobile": { "type": "boolean" },
+        "isInCollege": { "type": "boolean" },
+        "collegeName": { "type": "string" },
+        "course": { "type": "string" },
+        "authProvider": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "TestResult": {
+      "collection": "testResults",
+      "fields": {
+        "userId": { "type": "string" },
+        "testId": { "type": "string" },
+        "score": { "type": "number" },
+        "completedAt": { "type": "string" }
+      }
+    },
+    "ContactInquiry": {
+      "collection": "inquiries",
+      "fields": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "message": { "type": "string" }
+      }
+    },
+    "CourseHierarchy": {
+      "collection": "courses_hierarchy",
+      "fields": {
+        "proffs": { "type": "object" },
+        "courses": { "type": "array" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}
